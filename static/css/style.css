@@ -1,0 +1,34 @@
+
+/* Legend container style */
+.legend {
+  color: #555;
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background: white;
+  background: rgba(255, 255, 255, 0.8); /* Make the legend background slightly transparent */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Legend color box style */
+.legend i {
+  display: inline-block;
+  width: 18px; /* Adjust the width of the color box */
+  height: 18px; /* Adjust the height of the color box */
+  margin-right: 8px; /* Space between color box and text */
+  border-radius: 3px; /* Optional: gives color boxes slightly rounded corners */
+}
+
+/* Resetting margin and padding for the body */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Full height for map and layout */
+#map,
+body,
+html {
+  height: 100%;
+}

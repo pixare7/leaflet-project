@@ -32,16 +32,10 @@ Explore the  interactive [Earthquake Map](https://pixare7.github.io/leaflet-proj
 ### Methodology
 
 #### Data Collection
-- The earthquake data is retrieved from the USGS GeoJSON API, which provides up-to-date information on earthquakes recorded globally in the past 7 days. The dataset is updated every 5 minutes, ensuring that the map reflects the latest seismic activity.
+The earthquake data is retrieved from the USGS GeoJSON API, which provides up-to-date information on earthquakes recorded globally in the past 7 days. The dataset is updated every 5 minutes, ensuring that the map reflects the latest seismic activity.
 
 #### Data Visualization
-- **Leaflet** is used to plot earthquake data on a dynamic map. Markers on the map vary in size and color to represent different earthquake characteristics:
-  - **Marker Size**: Indicates the magnitude of the earthquake (larger markers for higher magnitudes).
-  - **Marker Color**: Reflects the depth of the earthquake, with deeper earthquakes shown in darker colors. The depth is derived from the third coordinate in the GeoJSON data.
-  - **Popups**: Each marker includes a popup that displays additional earthquake details, such as its location, magnitude, and depth, when clicked.
-- **D3.js** fetches and processes the GeoJSON data from the USGS API, ensuring the map dynamically updates with the most recent seismic activity.
-- **HTML** structures the webpage elements, including the map container, popups, and a **legend** that helps users interpret the color and size of the markers.
-- **CSS** styles the layout, map container, legend, and customizes marker appearance, enhancing the user experience with clear and visually engaging design.
+The project visualizes earthquake data on a dynamic map, where markers, created using **Leaflet**, vary in size and color to represent key characteristics like earthquake magnitude and depth. Larger markers indicate higher magnitudes, while color reflects depth, with deeper earthquakes shown in darker shades. Interactive popups, enabled by **JavaScript**, provide detailed information about each earthquake, and the map dynamically updates in real-time with the latest seismic data through **D3.js**. The structure of the webpage is defined using **HTML**, while **CSS** enhances the design, ensuring a user-friendly and visually engaging experience.
 
 #### Tools and Libraries
 - **JavaScript**: The core language that integrates Leaflet, D3.js, and handles interaction.

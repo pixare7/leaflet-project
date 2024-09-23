@@ -5,17 +5,22 @@
 2. [Project Details](#project-details)  
    - [Goals](#goals)  
    - [Methodology](#methodology)  
-   - [Visuals](#visuals)
-3. [Conclusions](#conclusions)
-4. [Future Work](#future-work)
-5. [References](#references)
+     - [Data Collection](#data-collection)
+     - [Data Visualization](#data-visualization)
+     - [Popups and Legend](#popups-and-legend)
+     - [Tools and Libraries](#tools-and-libraries)
+3. [Interactive Visualization](#interactive-visualization)
+4. [Conclusions](#conclusions)
+5. [Future Work](#future-work)
+6. [References](#references)
 
 ## Overview
 
-[INSERT GITHUB PAGES LINK HERE]
+[https://pixare7.github.io/leaflet-project/](https://pixare7.github.io/leaflet-project/)
 
 ### What is this project about? 
 This project provides the United States Geological Survey (USGS) with an interactive tool to visualize earthquake data dynamically. The map is designed to help educate the public and government organizations about earthquake patterns and their severity, as well as to support funding requests for earthquake preparedness initiatives.
+Explore the  interactive [Leaflet Earthquake Project](https://pixare7.github.io/leaflet-project/).
 
 ## Project Details
 
@@ -45,12 +50,14 @@ This project provides the United States Geological Survey (USGS) with an interac
 - **Leaflet.js**: For interactive map creation and marker visualization.
 - **D3.js**: For handling data retrieval and real-time updates from the USGS GeoJSON API.
 
-### Visuals
+## Interactive Visualization
 
 #### Figure 1: Interactive Earthquake Map
 ![Earthquake Map](https://github.com/pixare7/leaflet-project/blob/main/images/fig1.png)
 
 *This map shows a snapshot of earthquake activity at a particular point in time. The live version updates continuously with new data.*
+
+Explore the full interactive [Leaflet Earthquake Project](https://pixare7.github.io/leaflet-project/) to dynamically visualize earthquake data, with real-time updates and additional features.
 
 ## Conclusions
 

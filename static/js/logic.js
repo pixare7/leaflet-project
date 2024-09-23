@@ -6,7 +6,7 @@ d3.json(queryUrl).then(function (data) {
 
   // Once we get a response, send the data.features object to the createFeatures function.
   createFeatures(data.features);
-  
+
   console.log(data.features);
 });
 
@@ -92,9 +92,7 @@ function createMap(earthquakes) {
     div.innerHTML += '<p>Circle size reflects magnitude</p>';
     return div;
   };
- 
   legend.addTo(myMap);
-
 }
 
 // Helper function to determine marker size based on magnitude

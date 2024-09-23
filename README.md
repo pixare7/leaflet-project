@@ -2,94 +2,72 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Project Details](#project-details)
-   - [Background](#background)
-   - [Goals](#goals)
-   - [Methodology](#methodology)
+2. [Project Details](#project-details)  
+   - [Goals](#goals)  
+   - [Methodology](#methodology)  
    - [Visuals](#visuals)
 3. [Conclusions](#conclusions)
 4. [Future Work](#future-work)
-5. [Collaborators](#collaborators)
-6. References
+5. [References](#references)
 
 ## Overview
 
 [INSERT GITHUB PAGES LINK HERE]
 
 ### What is this project about? 
-This project is to help provide the United States Geological Survey (USGS) with a tool to visualizes earthquake data which is dynamic and interactive to help them better educate the public and other government organizations (also to help secure more funding) on this issue. 
+This project provides the United States Geological Survey (USGS) with an interactive tool to visualize earthquake data dynamically. The map is designed to help educate the public and government organizations about earthquake patterns and their severity, as well as to support funding requests for earthquake preparedness initiatives.
 
 ## Project Details
 
 ### Goals
- - Use Leaflet to create a map which plots all earthquakes from dataset retreived from USGS
- - Add markers to reflect the magnitude of the earthquake by their size and depth of the earthquake by color
- - Include popups that provide additional information about the earthquake when its associated marker is clicked.
- - Create a legend to provide context for map data.
+- Utilize **Leaflet** to create an interactive map that plots all earthquakes from a dataset retrieved from USGS.
+- Implement markers that reflect the magnitude of earthquakes by size and the depth by color.
+- Include popups that provide additional details about each earthquake when a marker is clicked.
+- Create a legend to offer context for the visualized data.
 
 ### Methodology
-Detail the approach and methods used to achieve the project's goals.
 
-In the "Methodology" section, you would typically describe the specific approaches, techniques, tools, and processes you used to accomplish the project's goals. Here are some examples of what you might include:
+#### Data Collection
+- The earthquake data is retrieved from the USGS GeoJSON API, which provides up-to-date information on earthquakes recorded globally in the past 7 days. The dataset is updated every 5 minutes, ensuring that the map reflects the latest seismic activity.
 
-1. **Data Collection:**
-   - Describe how you gathered the data for your project. This could involve web scraping, APIs, downloading datasets from public repositories, or collecting data manually.
-   - **Example:** "Weather data was collected using the OpenWeatherMap API for the years 2018-2022, covering various cities across the globe."
-   - Earthquake dataset was collected by geojson APi using D3 from USGS to display all earthquakes recorded the past 7 days.  The geopjason data is updated every 5 minutes.  
+#### Data Visualization
+- **Leaflet** is used to plot earthquake data on a dynamic map. Markers on the map vary in size and color to represent different earthquake characteristics:
+  - **Marker Size**: Indicates the magnitude of the earthquake (larger markers for higher magnitudes).
+  - **Marker Color**: Reflects the depth of the earthquake, with deeper earthquakes shown in darker colors. The depth is derived from the third coordinate in the GeoJSON data.
+- **D3.js** is integrated to fetch and process the GeoJSON data from the USGS API and dynamically update the map as new data becomes available.
 
-2. **Exploratory Data Analysis (EDA):**
-   - Outline the steps you took to explore the data, including any visualizations, summary statistics, or correlation analyses.
-   - **Example:** "EDA was performed using Leaflet and D3 in Javascript to visualize the distribution of earthquakes across different latitudes."
+#### Popups and Legend
+- Each marker includes a popup that displays additional information about the earthquake, such as its location, magnitude, and depth, when clicked.
+- A legend is provided to help users interpret the color and size of the markers on the map.
 
-3. **Tools and Libraries:**
-    - List any specific tools, libraries, or software that played a crucial role in your methodology.
-    - **Example:** "The analysis was conducted in Python using Pandas for data manipulation, Matplotlib for plotting, and Scikit-learn for machine learning."
-    - Javascript D3 was used to connect to geojson API to create this dynamic interactive visualization map. 
-    - Leaflet was used to make this an interactive map including markers to reflect the magnitude of the earthquake by their size and the depth of the earthquake by color, earthquakes with higher magnitudes  appear larger, and earthquakes with greater depth  appear darker in color, the depth of the earth can be found as the third coordinate for each earthquake, includes popups that provide additional information about the earthquake when its associated marker is clicked, a legend that will provide context for the map data.
-
+#### Tools and Libraries
+- **JavaScript**: The core language for integrating these libraries and building the functionality.
+- **Leaflet.js**: For interactive map creation and marker visualization.
+- **D3.js**: For handling data retrieval and real-time updates from the USGS GeoJSON API.
 
 ### Visuals
 
-#### Figure 1: [Figure Title]
-![Figure 1](path/to/figure1.png)
+#### Figure 1: Interactive Earthquake Map
+![Earthquake Map](https://github.com/pixare7/leaflet-project/blob/main/images/fig1.png)
 
-*This is an image of the earthquake map at a point in time. See the website for an updated map.*
-
-#### Figure 2: [Figure Title]
-![Figure 2](path/to/figure2.png)
-
-*Brief description of Figure 2.*
-
-#### Figure 3: [Figure Title]
-![Figure 3](path/to/figure3.png)
-
-*Brief description of Figure 3.*
-
-#### Figure 4: [Figure Title]
-![Figure 4](path/to/figure4.png)
-
-*Brief description of Figure 4.*
-
-#### Figure 5: [Figure Title]
-![Figure 5](path/to/figure5.png)
-
-*Brief description of Figure 5.*
+*This map shows a snapshot of earthquake activity at a particular point in time. The live version updates continuously with new data.*
 
 ## Conclusions
 
-Summarize the key findings or results of the project.
+This project successfully demonstrates how real-time earthquake data can be visualized using modern web technologies like Leaflet and D3. By integrating live data from the USGS GeoJSON API, the interactive map provides an effective tool for visualizing earthquake activity in a clear and intuitive way. The use of marker size and color to represent magnitude and depth helps convey the severity and characteristics of each earthquake at a glance. This tool not only aids public awareness but can also be leveraged by government organizations for better planning and response strategies.
 
 ## Future Work
 
-Discuss any potential extensions, improvements, or follow-up projects that could build on the work done in this project.
+While the current map provides a solid foundation for visualizing earthquake data, there are several enhancements that could further improve the tool's functionality and usability:
 
-## Collaborators
+1. **Additional Data Layers**: Incorporate other relevant geospatial data, such as fault lines, tectonic plate boundaries, or population density, to provide deeper insights into the impact of seismic events.
 
-List the contributors to the project and briefly describe their contributions.
+2. **Heatmap Layer**: Implement a heatmap overlay to better visualize earthquake density in specific regions, highlighting areas with frequent seismic activity.
 
-- **[Name 1]:** Role and contributions (e.g., "Data analysis, visualizations, and writing the overview section.")
-- **[Name 2]:** Role and contributions (e.g., "Database management, methodology section, and figures creation.")
-- **[Name 3]:** Role and contributions (e.g., "Literature review, conclusions section, and future work suggestions.")
+3. **Historical Data Integration**: Add an option to visualize earthquake data over a longer period (e.g., past months or years) to analyze trends and patterns in seismic activity.
+   
+4. **Filtering and Search Capabilities**: Enable users to filter earthquakes by magnitude, depth, or location, and include a search bar to look up specific regions or timeframes.
 
 ## References
-https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+
+1. United States Geological Survey (USGS). "Earthquake Catalog GeoJSON Summary Feed." Available at: [https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php).

@@ -7,7 +7,6 @@
    - [Methodology](#methodology)  
      - [Data Collection](#data-collection)
      - [Data Visualization](#data-visualization)
-     - [Popups and Legend](#popups-and-legend)
      - [Tools and Libraries](#tools-and-libraries)
 3. [Interactive Visualization](#interactive-visualization)
 4. [Conclusions](#conclusions)
@@ -39,16 +38,17 @@ Explore the  interactive [Earthquake Map](https://pixare7.github.io/leaflet-proj
 - **Leaflet** is used to plot earthquake data on a dynamic map. Markers on the map vary in size and color to represent different earthquake characteristics:
   - **Marker Size**: Indicates the magnitude of the earthquake (larger markers for higher magnitudes).
   - **Marker Color**: Reflects the depth of the earthquake, with deeper earthquakes shown in darker colors. The depth is derived from the third coordinate in the GeoJSON data.
-- **D3.js** is integrated to fetch and process the GeoJSON data from the USGS API and dynamically update the map as new data becomes available.
-
-#### Popups and Legend
-- Each marker includes a popup that displays additional information about the earthquake, such as its location, magnitude, and depth, when clicked.
-- A legend is provided to help users interpret the color and size of the markers on the map.
+  - **Popups**: Each marker includes a popup that displays additional earthquake details, such as its location, magnitude, and depth, when clicked.
+- **D3.js** fetches and processes the GeoJSON data from the USGS API, ensuring the map dynamically updates with the most recent seismic activity.
+- **HTML** structures the webpage elements, including the map container, popups, and a **legend** that helps users interpret the color and size of the markers.
+- **CSS** styles the layout, map container, legend, and customizes marker appearance, enhancing the user experience with clear and visually engaging design.
 
 #### Tools and Libraries
-- **JavaScript**: The core language for integrating these libraries and building the functionality.
-- **Leaflet.js**: For interactive map creation and marker visualization.
-- **D3.js**: For handling data retrieval and real-time updates from the USGS GeoJSON API.
+- **JavaScript**: The core language that integrates Leaflet, D3.js, and handles interaction.
+- **Leaflet.js**: For creating the interactive map and visualizing markers with varying characteristics.
+- **D3.js**: For retrieving real-time GeoJSON data from the USGS API and updating the map with current earthquake activity.
+- **HTML**: Provides the structure for the web page, including containers for the map and descriptive elements like popups and legends.
+- **CSS**: Responsible for styling the web page layout, marker design, and the overall look of the map and legend to ensure a polished and user-friendly interface.
 
 ## Interactive Visualization
 

@@ -1,5 +1,12 @@
 # Earthquakes Map Project
 
+## Overview
+
+This project provides the United States Geological Survey (USGS) with an interactive tool to visualize earthquake data dynamically. The map is designed to help educate the public and government organizations about earthquake patterns and their severity, as well as to support funding requests for earthquake preparedness initiatives.
+Explore the interactive [Earthquake Map](https://pixare7.github.io/leaflet-project/). 
+
+[https://pixare7.github.io/leaflet-project/](https://pixare7.github.io/leaflet-project/)
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [Project Details](#project-details)  
@@ -12,14 +19,6 @@
 4. [Conclusions](#conclusions)
 5. [Future Work](#future-work)
 6. [References](#references)
-
-## Overview
-
-[https://pixare7.github.io/leaflet-project/](https://pixare7.github.io/leaflet-project/)
-
-### What is this project about? 
-This project provides the United States Geological Survey (USGS) with an interactive tool to visualize earthquake data dynamically. The map is designed to help educate the public and government organizations about earthquake patterns and their severity, as well as to support funding requests for earthquake preparedness initiatives.
-Explore the  interactive [Earthquake Map](https://pixare7.github.io/leaflet-project/).
 
 ## Project Details
 
